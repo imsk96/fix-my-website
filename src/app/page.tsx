@@ -12,15 +12,14 @@ export default function Home() {
           your website. Ship faster, with confidence.
         </p>
         <div className="mt-10 flex items-center justify-center gap-4">
-          {/* Placeholder – will be replaced with actual auth in Phase 2 */}
-          <button
-            disabled
-            className="rounded-lg bg-indigo-600 px-6 py-3 text-white font-medium shadow hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            Sign In (Coming Soon)
-          </button>
           <Link
-            href="/"
+            href="/auth/signin"
+            className="rounded-lg bg-indigo-600 px-6 py-3 text-white font-medium shadow hover:bg-indigo-500"
+          >
+            Sign In
+          </Link>
+          <Link
+            href="/auth/signup"
             className="rounded-lg border border-gray-300 px-6 py-3 text-gray-700 font-medium hover:bg-gray-100"
           >
             Learn More
